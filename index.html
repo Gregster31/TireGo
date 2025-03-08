@@ -37,7 +37,7 @@
 						
 						<!-- logo -->
 						<div class="logo smooth-scroll">
-							<a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>
+							<a href="#banner"><img id="logo" src="images/logo.png" alt="TireGo"></a>
 						</div>
 						
 						<!-- name-and-slogan -->
@@ -108,7 +108,7 @@
 						<h1>Montreal Mobile-Tire Service</h1>
 						<h3 class="padding-top30">WE COME TO YOU</h3>
 						<div class="padding-top60 contact-form">
-							<button class="btn cta-button">Request Service</button>
+							<button class="btn cta-button" onclick="location.href='#price'">Request Service</button>
 						</div>
 					</div>
 				</div>
@@ -259,10 +259,10 @@
 									</div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="message2">Message</label>
-										<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
+										<textarea class="form-control" rows="8" id="message2" placeholder="Send us your question" name="message2" required></textarea>
 										<i class="fa fa-pencil form-control-feedback"></i>
 									</div>
-									<input type="submit" value="Send" class="btn btn-default">
+									<input type="button" value="Send" class="btn btn-default" onclick="sendEmail()">
 								</form>
 							</div>
 						</div>
@@ -273,21 +273,18 @@
 								
 								<div class="widget-content">
 									
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Maecenas ultrices finibus erat sit amet auctor. Curabitur et metus laoreet, fermentum quam sagittis, cursus augue. </p><br/>
+									<p>Contact us for any further questions you may have!</p><br/>
 									
-									<p class="contacts"><i class="fa fa-map-marker"></i> Montreal, West Island</p>
+									<p class="contacts"><i class="fa fa-map-marker"></i> Montreal</p>
 									
 									<p class="contacts"><i class="fa fa-phone"></i> 438-503-2191</p>
 									
 									<p class="contacts"><i class="fa fa-envelope"> mobiletirego@proton.me</i></p>
-									
-									
-									
 								</div>
 								
 							</aside>
 							<ul class="social-links">
-								<li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+								<!-- <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -295,19 +292,7 @@
 			</div>
 		</div>
 		<!-- .footer end -->
-		
-		<!-- .subfooter start --> 
-		<div class="subfooter">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p class="text-center">Copyright © 2025 <a target="_blank" href="http://MobileWheelService.com">MobileWheelService.com</a>.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- .subfooter end -->
-		
+
 	</footer>
 	<!-- footer end -->
 	
@@ -318,6 +303,7 @@
 	<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/sendEmail.js"></script>
 	
 	<!-- Custom Scripts -->
 	<script type="text/javascript" src="js/custom.js"></script>
