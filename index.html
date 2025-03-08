@@ -20,6 +20,8 @@
 	<link href="css/animations.css" rel="stylesheet"> 
 	<link href="css/style.css" rel="stylesheet"> 
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </head>
 
 <body class="no-trans">
@@ -183,130 +185,134 @@
 		</div>			  
 	</section>
 	<!-- section end -->
-		
-		<section id="price" class="price-table secPadding" style="display: flex; justify-content: center; align-items: center;">
-			<div class="container text-center" style="width: 100%; max-width: 1200px; padding: 20px;">
-				<div class="heading">
-					<h1 class="text-center title" id="">Services</h1>
-					<div class="separator"></div>
-					<p class="lead text-center">Quick and easy online booking</p>
-					<br>  
-				</div> 
-				<div class="row" style="display: flex; justify-content: center;"> 
-					<div class="col-sm-3" style="display: flex; justify-content: center;">
-						<div class="panel panel-default text-center">
-							<div class="panel-heading">
-								<h3>On Rims Tires Swap</h3>
-							</div>
-							<div class="panel-body">
-								<h3 class="panel-title price">$60</h3>
-							</div>
-							<ul class="list-group">
-								<li class="list-group-item"><strong>De-mounting/Mounting</strong> wheels</li>
-								<li class="list-group-item">Air pressure check and <strong>Visual Inspection</strong></li>
-								<li class="list-group-item"><strong>Torquing</strong> lug nuts to OEM specs</li>
-								<li class="list-group-item"><a class="btn btn-default">Book Now</a></li>
-							</ul>
-						</div>          
-					</div>
-					<!-- TO ADD OTHER PACKAGES -->
-					<!-- <div class="col-sm-3">
-						<div class="panel panel-default text-center">
-							<div class="panel-heading">
-								<h3>Plus</h3>
-							</div>
-							<div class="panel-body">
-								<h3 class="panel-title price">$19<span class="price-cents">99</span><span class="price-month">mo.</span></h3>
-							</div>
-							<ul class="list-group">
-								<li class="list-group-item">10 Projects</li>
-								<li class="list-group-item">10 GB of Storage</li>
-								<li class="list-group-item">Up to 250 Users</li>
-								<li class="list-group-item">25 GB Bandwidth</li>
-								<li class="list-group-item">Security Suite</li>
-								<li class="list-group-item"><a class="btn btn-default">Sign Up Now!</a></li>
-							</ul>
-						</div>          
-					</div> -->    
+	
+	<section id="price" class="price-table secPadding" style="display: flex; justify-content: center; align-items: center;">
+		<div class="container text-center" style="width: 100%; max-width: 1200px; padding: 20px;">
+			<div class="heading">
+				<h1 class="text-center title" id="">Services</h1>
+				<div class="separator"></div>
+				<p class="lead text-center">Quick and easy online booking</p>
+				<br>  
+			</div> 
+			<div class="row" style="display: flex; justify-content: center;"> 
+				<div class="col-sm-3" style="display: flex; justify-content: center;">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>On Rims Tires Swap</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="panel-title price">$60</h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item"><strong>De-mounting/Mounting</strong> wheels</li>
+							<li class="list-group-item">Air pressure check and <strong>Visual Inspection</strong></li>
+							<li class="list-group-item"><strong>Torquing</strong> lug nuts to OEM specs</li>
+							<li class="list-group-item">
+								<a class="btn btn-default" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mobiletirego-proton/30min'}); return false;">
+									Book Now
+								</a>
+							</li>
+						</ul>
+					</div>          
 				</div>
-			</div>      
-		</section>
-		
-		
-		
-		<!-- footer start --> 
-		<footer id="footer">
-			
-			<!-- .footer start --> 
-			<div class="footer section">
-				<div class="container">
-					<h1 class="title text-center" id="contact">Contact Us</h1>
-					<div class="space"></div>
-					<div class="row">
-						
-						<div class="col-sm-6">
-							<div class="footer-content">
-								<form role="form" id="footer-form">
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="name2">Name</label>
-										<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
-										<i class="fa fa-user form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="email2">Email address</label>
-										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
-										<i class="fa fa-envelope form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="message2">Message</label>
-										<textarea class="form-control" rows="8" id="message2" placeholder="Send us your question" name="message2" required></textarea>
-										<i class="fa fa-pencil form-control-feedback"></i>
-									</div>
-									<input type="button" value="Send" class="btn btn-default" onclick="sendEmail()">
-								</form>
-							</div>
+				<!-- TO ADD OTHER PACKAGES -->
+				<!-- <div class="col-sm-3">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<h3>Plus</h3>
 						</div>
-						
-						<div class="col-sm-6">
-							<div class="footer-content">
-								
-								
-								<div class="widget-content">
-									
-									<p>Contact us for any further questions you may have!</p><br/>
-									
-									<p class="contacts"><i class="fa fa-map-marker"></i> Montreal</p>
-									
-									<p class="contacts"><i class="fa fa-phone"></i> 438-503-2191</p>
-									
-									<p class="contacts"><i class="fa fa-envelope"> mobiletirego@proton.me</i></p>
+						<div class="panel-body">
+							<h3 class="panel-title price">$19<span class="price-cents">99</span><span class="price-month">mo.</span></h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">10 Projects</li>
+							<li class="list-group-item">10 GB of Storage</li>
+							<li class="list-group-item">Up to 250 Users</li>
+							<li class="list-group-item">25 GB Bandwidth</li>
+							<li class="list-group-item">Security Suite</li>
+							<li class="list-group-item"><a class="btn btn-default">Sign Up Now!</a></li>
+						</ul>
+					</div>          
+				</div> -->    
+			</div>
+		</div>      
+	</section>
+	
+	
+	
+	<!-- footer start --> 
+	<footer id="footer">
+		
+		<!-- .footer start --> 
+		<div class="footer section">
+			<div class="container">
+				<h1 class="title text-center" id="contact">Contact Us</h1>
+				<div class="space"></div>
+				<div class="row">
+					
+					<div class="col-sm-6">
+						<div class="footer-content">
+							<form role="form" id="footer-form">
+								<div class="form-group has-feedback">
+									<label class="sr-only" for="name2">Name</label>
+									<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
+									<i class="fa fa-user form-control-feedback"></i>
 								</div>
-								
-							</aside>
-							<ul class="social-links">
-								<!-- <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li> -->
-							</ul>
+								<div class="form-group has-feedback">
+									<label class="sr-only" for="email2">Email address</label>
+									<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
+									<i class="fa fa-envelope form-control-feedback"></i>
+								</div>
+								<div class="form-group has-feedback">
+									<label class="sr-only" for="message2">Message</label>
+									<textarea class="form-control" rows="8" id="message2" placeholder="Send us your question" name="message2" required></textarea>
+									<i class="fa fa-pencil form-control-feedback"></i>
+								</div>
+								<input type="button" value="Send" class="btn btn-default" onclick="sendEmail()">
+							</form>
 						</div>
+					</div>
+					
+					<div class="col-sm-6">
+						<div class="footer-content">
+							
+							
+							<div class="widget-content">
+								
+								<p>Contact us for any further questions you may have!</p><br/>
+								
+								<p class="contacts"><i class="fa fa-map-marker"></i> Montreal</p>
+								
+								<p class="contacts"><i class="fa fa-phone"></i> 438-503-2191</p>
+								
+								<p class="contacts"><i class="fa fa-envelope"> mobiletirego@proton.me</i></p>
+							</div>
+							
+						</aside>
+						<ul class="social-links">
+							<!-- <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li> -->
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- .footer end -->
+	</div>
+	<!-- .footer end -->
+	
+</footer>
+<!-- footer end -->
 
-	</footer>
-	<!-- footer end -->
-	
-	<!-- JavaScript --> 
-	<script type="text/javascript" src="plugins/jquery.min.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="plugins/modernizr.js"></script>
-	<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
-	<script type="text/javascript" src="plugins/jquery.appear.js"></script>
-	<script type="text/javascript" src="js/sendEmail.js"></script>
-	
-	<!-- Custom Scripts -->
-	<script type="text/javascript" src="js/custom.js"></script>
-	
+<!-- JavaScript --> 
+<script type="text/javascript" src="plugins/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins/modernizr.js"></script>
+<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="js/sendEmail.js"></script>
+
+<!-- Custom Scripts -->
+<script type="text/javascript" src="js/custom.js"></script>
+
 </body>
 </html>
